@@ -3,6 +3,35 @@
 import pandas as pd
 from sklearn.impute import SimpleImputer
 
+
+def missing_values_summary(df):
+    """
+    This function takes a pandas DataFrame and returns a summary of missing values,
+    sorted by the percentage of missing values in descending order.
+    
+    Parameters:
+    df (pd.DataFrame): The DataFrame to check for missing values.
+    
+    Returns:
+    pd.DataFrame: A DataFrame with the count and percentage of missing values for each column, sorted by percentage.
+    """
+    # Calculate the number of missing values for each column
+    missing_count = df.isnull().sum()
+    
+    # Calculate the percentage of missing values for each column
+    missing_percentage = (missing_count / len(df)) * 100
+    
+    # Create a summary DataFrame
+    missing_summary = pd.DataFrame({
+        'Missing Values': missing_count,
+        'Percentage': missing_percentage
+    })
+    
+    # Sort the summary DataFrame by the percentage of missing values in descending order
+    missing_summary = missing_summary.sort_values(by='Percentage', ascending=False)
+    
+    return missing_summary
+
 def handle_missing_numerical(df, strategy='mean'):
     """
     Handle missing values for numerical columns.

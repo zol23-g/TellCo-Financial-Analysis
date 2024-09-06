@@ -27,16 +27,3 @@ def load_data(query, db_config):
     close_db_connection(engine)
     return df
 
-# Example usage within the script (optional)
-if __name__ == "__main__":
-    db_config = {
-        'user': 'postgres',
-        'password': 'password',
-        'host': 'localhost',
-        'port': 5432,
-        'database': 'tellco_db'
-    }
-    
-    query = "SELECT * FROM xdr_data"
-    df = load_data(query, db_config)
-    print(df.head())
