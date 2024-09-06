@@ -23,7 +23,7 @@ The objectives of this project are:
 
 ---
 
-## **Project Structure**
+<!-- ## **Project Structure**
 
 ```
 ├── data/                     # Directory containing the telecom dataset (raw and cleaned).
@@ -42,7 +42,7 @@ The objectives of this project are:
 └── .gitignore                 # Files and directories to ignore in git.
 ```
 
----
+--- -->
 
 ## **Getting Started**
 
