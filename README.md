@@ -1,6 +1,3 @@
-Here's a template for a `README.md` file that provides a comprehensive overview of your project, outlining the purpose, structure, and instructions for running the analysis.
-
----
 
 # **Telecom User Engagement and Behavior Analysis**
 
