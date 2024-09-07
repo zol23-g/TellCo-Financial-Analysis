@@ -153,6 +153,3 @@ For any questions or issues regarding this project, please contact:
 - **Email**: zelalemwubet93@gmail.com
 - **GitHub**: https://github.com/zol23-g
 
----
-
-This `README.md` provides an overview of the project, steps to run the analysis, and a breakdown of the results. You can customize it with your specific project details, links, and contact information.
