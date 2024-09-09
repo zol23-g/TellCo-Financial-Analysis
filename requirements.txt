@@ -4,3 +4,4 @@ seaborn
 scikit-learn
 psycopg2-binary
 plotly
+streamlit
