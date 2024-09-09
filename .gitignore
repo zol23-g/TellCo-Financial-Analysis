@@ -6,4 +6,5 @@ venv/
 # data/
 
 db_connection/
-app
+
+notebooks/user_satisfaction_scores.py

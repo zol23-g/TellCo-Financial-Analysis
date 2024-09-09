@@ -5,3 +5,6 @@ scikit-learn
 psycopg2-binary
 plotly
 streamlit
+mlflow
+
+
