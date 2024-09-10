@@ -1,20 +1,17 @@
-# Use the official Python image
-FROM python:3.9-slim
+# Use an official Python runtime as a parent image
+FROM python:3.9
 
-# Set the working directory
+# Set the working directory in the container
 WORKDIR /
 
-# Copy the requirements.txt into the image
-COPY requirements.txt requirements.txt
+# Copy the current directory contents into the container
+COPY . /app
 
-# Install the dependencies
+# Install Python dependencies
 RUN pip install -r requirements.txt
 
-# Copy the rest of the application code
-COPY . .
-
-# Expose port 5000 for the MLflow server
+# Expose port for MLflow UI (optional)
 EXPOSE 5000
 
-# Start MLflow tracking server on container start
-CMD ["mlflow", "ui", "--host", "0.0.0.0"]
+# Run the model script (or mlflow ui for tracking)
+CMD ["mlflow", "ui"]

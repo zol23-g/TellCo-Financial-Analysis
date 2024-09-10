@@ -10,9 +10,9 @@ def init_connection():
         # Pass PostgreSQL credentials directly to psycopg2.connect
         return psycopg2.connect(
             dbname="tellco_db",
-            user="postgres",
-            password="password",
-            host="localhost",
+            user="zola",
+            password="LIZR7XwHKEkt05LFV0x9KTZhhPLDtVmv",
+            host="dpg-crfm21o8fa8c73d8chh0-a.oregon-postgres.render.com",
             port="5432"
         )
     except Exception as e:
