@@ -1,4 +1,4 @@
-sqlalchemy
+SQLAlchemy
 pandas
 seaborn
 scikit-learn
